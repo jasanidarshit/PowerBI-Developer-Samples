@@ -140,6 +140,7 @@ class App extends React.Component<AppProps, AppState> {
         }
 
         const eventCallback = msalInstance.addEventCallback((message: EventMessage) => {
+            console.log(EventType)
             if (message.eventType === EventType.LOGIN_SUCCESS && !accessToken) {
                 const payload = message.payload as AuthenticationResult;
                 const name: string = payload.account?.name ? payload.account?.name: "";
@@ -258,8 +259,8 @@ class App extends React.Component<AppProps, AppState> {
     // Show username in the UI
     setUsername(username: string): void {
         const welcome = document.getElementById("welcome");
-        if (welcome !== null)
-            welcome.innerText = "Welcome, " + username;
+        // if (welcome !== null)
+        //     welcome.innerText = "Welcome, " + username;
     }
 }
 

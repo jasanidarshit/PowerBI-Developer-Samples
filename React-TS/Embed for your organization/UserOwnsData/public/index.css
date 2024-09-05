@@ -2,14 +2,15 @@
 Licensed under the MIT license. */
 
 #root {
-  padding-left: 20vw;
-  padding-top: 5%;
-  width: 60vw;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  /* width: 90vw; */
 }
 
 @media only screen and (max-width: 1333.33px) {
   #root {
-    padding-left: calc((100vw - 800px)/2);
+    padding-left: 10px;
   }
 }
 
